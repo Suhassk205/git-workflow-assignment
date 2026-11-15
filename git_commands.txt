@@ -1,0 +1,67 @@
+================================================================================
+GIT COMMANDS DOCUMENTATION (git_commands.txt)
+Assignment: Git & GitHub Workflow & Software Testing
+Author: Suhas Kembhavi
+Repository: https://github.com/Suhassk205/git-workflow-assignment
+================================================================================
+
+1. git init -b main
+   Initializes an empty Git repository in the current local folder and sets the
+   default branch name to 'main'.
+
+2. git status
+   Displays the state of the working tree and staging area, reporting tracked,
+   untracked, staged, or modified files.
+
+3. git add index.html about.html (or git add .)
+   Stages changes from the working tree into the Git index (staging area),
+   preparing them for the next commit.
+
+4. git commit -m "Initial commit: Add index.html and about.html"
+   Captures and permanently saves staged snapshots into the repository history
+   with an informative commit message.
+
+5. git diff
+   Shows file differences and line-by-line edits between the working directory
+   and the staging area or last commit.
+
+6. git branch feature
+   Creates a new branch named 'feature' pointing to the current commit without
+   automatically switching to it.
+
+7. git checkout feature (or git switch feature)
+   Switches the working directory and HEAD pointer to the specified branch
+   ('feature') to isolate new development.
+
+8. git branch
+   Lists all local branches in the repository and highlights the currently active
+   working branch with an asterisk (*).
+
+9. git merge feature --no-ff -m "Merge branch 'feature' into main"
+   Merges the specified branch ('feature') into the current branch ('main'),
+   creating a dedicated merge commit to maintain branch history.
+
+10. git log --graph --oneline --all
+    Displays the commit history across all branches in a visual ASCII graph
+    format on single lines for concise inspection.
+
+11. git reset --hard HEAD~1
+    Undoes the most recent commit by moving the branch pointer and HEAD back by
+    one commit, discarding uncommitted changes in working tree and staging area.
+
+12. git remote add origin https://github.com/Suhassk205/git-workflow-assignment.git
+    Associates the local Git repository with the remote repository hosted on
+    GitHub under the alias 'origin'.
+
+13. git remote -v
+    Lists all configured remote connection names and their corresponding fetch
+    and push URLs for verification.
+
+14. git push -u origin main
+    Transfers local commits from the 'main' branch to the remote GitHub repository
+    and sets 'origin/main' as the upstream tracking reference.
+
+15. git push origin feature
+    Pushes the local 'feature' branch to GitHub, preserving branch history and
+    commit timelines on the remote server.
+================================================================================
